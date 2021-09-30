@@ -1,0 +1,48 @@
+CREATE TABLE Profil(
+   Id_Profil VARCHAR(50),
+   Nom VARCHAR(50),
+   Prenom VARCHAR(50),
+   d_Naissance DATE,
+   Crédit DOUBLE,
+   statut VARCHAR(50),
+   PRIMARY KEY(Id_Profil)
+);
+
+CREATE TABLE Transaction(
+   Id_Profil VARCHAR(50),
+   Id_transaction VARCHAR(50),
+   date_Transaction DATE,
+   type VARCHAR(50),
+   montant DOUBLE,
+   description VARCHAR(50),
+   PRIMARY KEY(Id_Profil, Id_transaction),
+   FOREIGN KEY(Id_Profil) REFERENCES Profil(Id_Profil)
+);
+
+CREATE TABLE Catégorie(
+   id_categorie VARCHAR(50),
+   nom_categorie VARCHAR(50),
+   PRIMARY KEY(id_categorie)
+);
+
+CREATE TABLE Produit(
+   id_categorie VARCHAR(50),
+   Id_produit VARCHAR(50),
+   Nom VARCHAR(50),
+   Prix DOUBLE,
+   quantité DOUBLE,
+   description_prod VARCHAR(50),
+   PRIMARY KEY(id_categorie, Id_produit),
+   FOREIGN KEY(id_categorie) REFERENCES Catégorie(id_categorie)
+);
+
+CREATE TABLE Acheter(
+   Id_Profil VARCHAR(50),
+   id_categorie VARCHAR(50),
+   Id_produit VARCHAR(50),
+   Date_achat DATE,
+   etat VARCHAR(50),
+   PRIMARY KEY(Id_Profil, id_categorie, Id_produit),
+   FOREIGN KEY(Id_Profil) REFERENCES Profil(Id_Profil),
+   FOREIGN KEY(id_categorie, Id_produit) REFERENCES Produit(id_categorie, Id_produit)
+);
