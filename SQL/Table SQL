@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `catégorie` (
-  `id_categorie` int(11) NOT NULL,
+  `id_categorie` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `nom_categorie` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -48,7 +48,7 @@ INSERT INTO `catégorie` (`id_categorie`, `nom_categorie`) VALUES
 --
 
 CREATE TABLE `commande` (
-  `id_commande` int(11) NOT NULL,
+  `id_commande` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `date_commande` date DEFAULT NULL,
   `quantite_commande` double DEFAULT NULL,
   `id_etat` int(11) NOT NULL,
@@ -73,7 +73,7 @@ CREATE TABLE `concerner` (
 --
 
 CREATE TABLE `etat_cmd` (
-  `id_etat` int(11) NOT NULL,
+  `id_etat` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `nom_etat` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -92,7 +92,7 @@ INSERT INTO `etat_cmd` (`id_etat`, `nom_etat`) VALUES
 --
 
 CREATE TABLE `privilege` (
-  `id_privilege` int(11) NOT NULL,
+  `id_privilege` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `status_privilege` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -111,7 +111,7 @@ INSERT INTO `privilege` (`id_privilege`, `status_privilege`) VALUES
 --
 
 CREATE TABLE `produit` (
-  `Id_produit` int(11) NOT NULL,
+  `Id_produit` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `nom_produit` varchar(50) DEFAULT NULL,
   `prix_produit` double DEFAULT NULL,
   `quantite_produit` double DEFAULT NULL,
@@ -134,7 +134,7 @@ INSERT INTO `produit` (`Id_produit`, `nom_produit`, `prix_produit`, `quantite_pr
 --
 
 CREATE TABLE `profil` (
-  `Id_Profil` int(11) NOT NULL,
+  `Id_Profil` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `mail_profil` varchar(50) DEFAULT NULL,
   `login_profil` varchar(50) DEFAULT NULL,
   `password_profil` varchar(50) DEFAULT NULL,
@@ -161,7 +161,7 @@ INSERT INTO `profil` (`Id_Profil`, `mail_profil`, `login_profil`, `password_prof
 --
 
 CREATE TABLE `sexe` (
-  `id_sexe` int(11) NOT NULL,
+  `id_sexe` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `type_sexe` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
