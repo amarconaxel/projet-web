@@ -6,6 +6,7 @@
 	<title>CYKASINO - Boutique</title>
 	<link rel="stylesheet" type="text/css" href="../css/default.css" >
 	<link rel="stylesheet" type="text/css" href="../css/menu.css" >
+	<link rel="stylesheet" type="text/css" href="../css/pieds.css" >
 	
 </head>
 
@@ -73,6 +74,10 @@
 			<img src="../images/pub-vodka.gif" alt="Publicit� Vodka" />
 		</div>
 	</div>
+	
+	<br/><br/><br/><br/><br/><br/>
+	
+	<?php include_once("pieds.php"); ?>
 	
 </body>
 

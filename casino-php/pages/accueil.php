@@ -6,6 +6,7 @@
 	<title>CYKASINO</title>
 	<link rel="stylesheet" type="text/css" href="../css/default.css" >
 	<link rel="stylesheet" type="text/css" href="../css/menu.css" >
+	<link rel="stylesheet" type="text/css" href="../css/pieds.css" >
 	
 </head>
 
@@ -18,9 +19,11 @@
 			<p>Bonjour, venez depenser vos pessos </p>
 		</div>
 		<div id="pubs">
-			<img src="../images/pub-vodka.gif" alt="Publicité Vodka" />
+			<img src="../images/pub-vodka.gif" alt="Publicitï¿½ Vodka" />
 		</div>
 	</div>
+	
+	<?php include_once("pieds.php"); ?>
 	
 </body>
 
