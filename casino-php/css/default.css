@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+body {
+	background-color: #2C394B;
+	margin: 2%;
+}
+
+#page {
+	width: 100%;
+	white-space: nowrap;
+}
+
+#page.div {
+	display: inline-block;
+}
+
+#corps {
+	width: 70%;
+	float: left;
+}
+
+#pubs {
+	width: 30%;
+	float: rigth;
+	clear: right;
+}
+
+
+#pubs img {
+	padding-top: 30px;
+	padding-left: 30px;
+	width: 300px;
+}
+
+#produits {
+	width: 100%;
+	display: grid;
+  	grid-template-columns: repeat(3, 1fr);
+  	grid-gap: 10px;
+  	grid-auto-rows: minmax(100px, auto);
+}
+
+#produits div {
+	background-color: #334756;
+	color: #F0F0F0;
+	text-align: center;
+}
+
+#produits img {
+	width: 300px;
+}
+
+#produits input {
+	width: 40px;
+}
+
+#bouton {
+	text-align: center;
+}
+
+#bouton button {
+	color: #FF4C29;
+}
