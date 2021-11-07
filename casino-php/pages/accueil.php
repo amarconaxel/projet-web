@@ -1,30 +1,37 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-	<meta charset="utf-8">
-	<title>CYKASINO</title>
-	<link rel="stylesheet" type="text/css" href="../css/default.css" >
-	<link rel="stylesheet" type="text/css" href="../css/menu.css" >
-	<link rel="stylesheet" type="text/css" href="../css/pieds.css" >
-	
-</head>
-
 <body>
-	
-	<?php include_once("entete.php"); ?>
-	
 	<div id="page">
 		<div id="corps">
-			<p>Bonjour, venez depenser vos pessos </p>
+			<h1>Bonjour, venez depenser vos pessos </h1>
+			
+			<div id="carousel">
+				<img class="images-carousel" src="../images/viewer/machine.jpg" alt="Machie à jouer" />
+
+  				<img class="images-carousel" src="../images/viewer/roulette.jpg" alt="Roulette de casino" />
+
+  				<img class="images-carousel" src="../images/viewer/roulette2.jpg"  alt="Roulette de casino" />
+			</div>
 		</div>
 		<div id="pubs">
-			<img src="../images/pub-vodka.gif" alt="Publicit� Vodka" />
+			<img src="../images/pub-vodka.gif" alt="Publicité Vodka" />
 		</div>
 	</div>
 	
-	<?php include_once("pieds.php"); ?>
+	<script>
+	var index = 0;
+	carouselImages();
+
+	function carouselImages() {
+	  	var i;
+	  	var images = document.getElementsByClassName("images-carousel");
+	  	for (i = 0; i < images.length; i++) {
+	    	images[i].style.display = "none";  
+	  	}
+	  	index++;
+	  	if (index > images.length) {index = 1}    
+
+	  	images[index-1].style.display = "block";  
+	  	setTimeout(carouselImages, 2000); // Change image every 2 seconds
+	}
+	</script>
 	
 </body>
-
-</html>

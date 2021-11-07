@@ -1,30 +1,16 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-	<meta charset="utf-8">
-	<title>CYKASINO - Boutique</title>
-	<link rel="stylesheet" type="text/css" href="../css/default.css" >
-	<link rel="stylesheet" type="text/css" href="../css/menu.css" >
-	<link rel="stylesheet" type="text/css" href="../css/pieds.css" >
-	
-</head>
-
 <body>
-	
-	<?php include_once("entete.php"); ?>
 	
 	<div id="page">
 		<div id="corps">
 			<h1>Choisissez vos cadeaux !</h1>
 			<form>
 				<div id="produits">
-				    <!-- TODO inserez PHP pour la g�n�ration des produits -->
+				    <!-- TODO inserez PHP pour la génération des produits -->
 					<div>
 						<img src="$lienImgProduit" alt="$descriptionProduit" />
 						<p>$nomProduit</p>
 						<label for="quantite">Quantité : </label>
-    					<input type="number" name="quantite" id="quantite" value="0">
+    					<input type="number" name="quantite" id="quantite" value="0" min="0" max="20">
 					</div>
 					<div>
 						<img src="$lienImgProduit" alt="$descriptionProduit" />
@@ -71,14 +57,10 @@
 			</form>
 		</div>
 		<div id="pubs">
-			<img src="../images/pub-vodka.gif" alt="Publicit� Vodka" />
+			<img src="../images/pub-vodka.gif" alt="Publicité Vodka" />
 		</div>
 	</div>
 	
 	<br/><br/><br/><br/><br/><br/>
 	
-	<?php include_once("pieds.php"); ?>
-	
 </body>
-
-</html>
