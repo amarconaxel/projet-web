@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<images>
+	<image>
+		<alt>Image de Roulette</alt>
+		<src>roulette.jpg</src>
+	</image>
+	<image>
+		<alt>Image de Roulette</alt>
+		<src>roulette2.jpg</src>
+	</image>
+	<image>
+		<alt>Image de Machine à jouer</alt>
+		<src>machine.jpg</src>
+	</image>
+</images>

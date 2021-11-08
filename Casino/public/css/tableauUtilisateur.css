@@ -1,0 +1,33 @@
+table {
+    border: 1px solid black;
+    height: 50%;
+    border-collapse: collapse;
+    width: 90%;
+    margin: 0px auto; 
+  }
+  table, td, th {  
+    border: 1px solid black;
+    text-align: left;
+    text-align: center;
+  }
+th {
+    background-color: #3C9F12 ;
+    color: white;
+    height: 70px;
+    padding: 15px;
+}
+td {
+    background-color: white;
+    padding: 15px;
+}
+
+button[type=submit]{
+    background-color: #4CAF50;
+    border: none;
+    width: 2cm;
+    color: white;
+    padding: 5px 5px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
