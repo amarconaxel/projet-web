@@ -2,28 +2,9 @@
     session_status() === PHP_SESSION_ACTIVE ? TRUE : session_start();
 ?>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- STYLE -->
-    <link href="../public/css/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../public/css/default.css" >
-	<link rel="stylesheet" href="../public/css/menu.css" >
-	<link rel="stylesheet" href="../public/css/pieds.css" >
-    <link rel="stylesheet" href="../public/css/entete.css" >
-    <link rel="stylesheet" href="../public/css/inscription.css" >
-    <title>Connexion</title>
-</head>
 
 <body>
 
-<!-- HEADER -->
-<?php
-    include 'includes/header.php';
-?>
-<!-- HEADER END -->
 
 <!-- MAIN -->
 <div class="wrapper">
@@ -36,7 +17,7 @@
             <p id="userMailName"></p>
             <input class="box-input" type="password" name="pwd" placeholder="Mot de passe">
             <p id="userPwd"></p>
-            <button class="cancelbtn"type="button" onclick="window.location.href= '/Casino/index.php';">Annuler</button>
+            <button class="cancelbtn"type="button" onclick="window.location.href= '../index.php';">Annuler</button>
             <button class="signupbtn" type="submit" name="login-submit">Se connecter</button>
         </div>
     </form>
@@ -45,12 +26,7 @@
     <!-- LOGIN END -->
 
 </div>
-<!-- MAIN END -->
-<!-- FOOTER -->
-<?php
-            include('includes/footer.php');
-?>
-<!-- FOOTER END -->
+
 <script>
 
 //Validation des champs

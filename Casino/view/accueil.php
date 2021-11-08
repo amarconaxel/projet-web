@@ -4,15 +4,15 @@
 			<h1>Bonjour, venez depenser vos pessos </h1>
 			
 			<div id="carousel">
-				<img class="images-carousel" src="/Casino/public/images/viewer/machine.jpg" alt="Machie à jouer" />
+				<img class="images-carousel" src="../public/images/viewer/machine.jpg" alt="Machie à jouer" />
 
-  				<img class="images-carousel" src="/Casino/public/images/viewer/roulette.jpg" alt="Roulette de casino" />
+  				<img class="images-carousel" src="../public/images/viewer/roulette.jpg" alt="Roulette de casino" />
 
-  				<img class="images-carousel" src="/Casino/public/images/viewer/roulette2.jpg"  alt="Roulette de casino" />
+  				<img class="images-carousel" src="../public/images/viewer/roulette2.jpg"  alt="Roulette de casino" />
 			</div>
 		</div>
 		<div id="pubs">
-			<img src="/Casino/public/images/pub-vodka.gif" alt="Publicité Vodka" />
+			<img src="../public/images/pub-vodka.gif" alt="Publicité Vodka" />
 		</div>
 	</div>
 	

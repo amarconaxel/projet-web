@@ -47,8 +47,8 @@ if ($_SESSION['status'] == 'admin'){
         <tbody>';
     if($result !== null) {
         foreach ($result as $key => $value) {
-            $suprUtilisateur = "/Casino/inc.scripts/suppression_inc.php?supprimer=".$value['Id_Profil']."";
-            $modUtilisateur = "/Casino/view/modifierUtilisateur.php?modifier=".$value['Id_Profil']."";
+            $suprUtilisateur = "../inc.scripts/suppression_inc.php?supprimer=".$value['Id_Profil']."";
+            $modUtilisateur = "../view/modifierUtilisateur.php?modifier=".$value['Id_Profil']."";
             echo "<tr>";
             echo "<td>".$value['Id_Profil']."</td>";
             echo "<td>".$value['login_profil']."</td>";

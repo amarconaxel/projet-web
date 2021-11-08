@@ -6,7 +6,7 @@
             // Affiche l'interface utilisateur
             echo '
             <head>
-                <script type="text/javascript" src="/Casino/js/entete.js"></script>
+                <script type="text/javascript" src="../js/entete.js"></script>
             </head>
             ';
             echo '<body onload="initEntete();">';
@@ -19,13 +19,13 @@
                     </div>
                     <div id="logo">
                         <a href="/Casino/index.php?page=accueil">
-                            <p><img src="/Casino/public/images/logo.png" alt="Logo de Cykasino" />Cукаsino</p>
+                            <p><img src="../public/images/logo.png" alt="Logo de Cykasino" />Cукаsino</p>
                         </a>	
                     </div>
                     <div id="connexion">
                         <ul>
                             <li><a class="text"> Bienvenue '.$userUsername.'</a></li>
-                            <li><a href="/Casino/inc.scripts/logout.inc.php">Log Out</a></li>
+                            <li><a href="../inc.scripts/logout.inc.php">Log Out</a></li>
                         </ul>
                     </div>
                 </div>
@@ -36,13 +36,10 @@
                 <div id="listeMenu">
                     <table>
                         <tr>
-                            <td><a href="/Casino/index.php?page=accueil">Accueil</a></td>
+                            <td><a href="../index.php?page=accueil">Accueil</a></td>
                         </tr>
                         <tr>
-                            <td><a href="/Casino/index.php?page=cartes">Cartes</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="/Casino/index.php?page=boutique">Boutique</a></td>
+                            <td><a href="../index.php?page=boutique">Boutique</a></td>
                         </tr>
                         <tr class="tableConnexion">
                             <td><a class="text"> Bienvenue '.$userUsername.'</a></td>
@@ -72,13 +69,13 @@
                     </div>
                     <div id="logo">
                         <a href="/Casino/index.php?page=accueil">
-                            <p><img src="/Casino/public/images/logo.png" alt="Logo de Cykasino" />Cукаsino</p>
+                            <p><img src="../public/images/logo.png" alt="Logo de Cykasino" />Cукаsino</p>
                         </a>	
                     </div>
                     <div id="connexion">
                         <ul>
                             <li><a class="text"> Espace admin de : '.$userUsername.'</a></li>
-                            <li><a href="/Casino/inc.scripts/logout.inc.php">Log Out</a></li>
+                            <li><a href="../inc.scripts/logout.inc.php">Log Out</a></li>
                         </ul>
                     </div>
                 </div>
@@ -89,15 +86,15 @@
                 <div id="listeMenu">
                     <table>
                         <tr>
-                            <td><a href="/Casino/index.php?page=accueil">Accueil</a></td>
+                            <td><a href="../index.php?page=accueil">Accueil</a></td>
                         <tr>
-                            <td><a href="/Casino/index.php?page=boutique">Boutique</a></td>
+                            <td><a href="../index.php?page=boutique">Boutique</a></td>
                         </tr>
                         <tr>
-                            <td><a href="/Casino/view/gestionUtilisateur.php?page=GestionUtilisateur">Gestion des utilisateurs</a></td>
+                            <td><a href="../index.php?page=GestionUtilisateur">Gestion des utilisateurs</a></td>
                         </tr>
                         <tr>
-                            <td><a href="/Casino/index.php?page=Gestion page d\'accueil">Gestion de la page d\'accueil</a></td>
+                            <td><a href="../index.php?page=Gestion page d\'accueil">Gestion de la page d\'accueil</a></td>
                         </tr>
                         <tr class="tableConnexion">
                             <td><a class="text"> Bienvenue '.$userUsername.'</a></td>
@@ -127,14 +124,14 @@
                         </nav>
                     </div>
                     <div id="logo">
-                        <a href="/Casino/index.php?page=accueil">
-                            <p><img src="/Casino/public/images/logo.png" alt="Logo de Cykasino" />Cукаsino</p>
+                        <a href="../index.php?page=accueil">
+                            <p><img src="../public/images/logo.png" alt="Logo de Cykasino" />Cукаsino</p>
                         </a>	
                     </div>
                     <div id="connexion">
                         <ul>
-                            <li><a href="/Casino/view/login.php?page=Connexion">Se connecter</a></li>
-                            <li><a href="/Casino/view/inscription.php?page=Inscription">Inscription</a></li>
+                            <li><a href="../index.php?page=login">Se connecter</a></li>
+                            <li><a href="../index.php?page=inscription">Inscription</a></li>
                         </ul>
                     </div>
                 </div>
@@ -144,19 +141,16 @@
                 <div id="listeMenu">
                     <table>
                         <tr>
-                            <td><a href="/Casino/index.php?page=accueil">Accueil</a></td>
+                            <td><a href="../index.php?page=accueil">Accueil</a></td>
                         </tr>
                         <tr>
-                            <td><a href="/Casino/index.php?page=cartes">Cartes</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="/Casino/index.php?page=boutique">Boutique</a></td>
+                            <td><a href="../index.php?page=boutique">Boutique</a></td>
                         </tr>
                         <tr class="tableConnexion">
-                            <td><a href="/Casino/view/login.php"">Se connecter</a></td>
+                            <td><a href="../index.php?page=login">Se connecter</a></td>
                         </tr>
                         <tr class="tableConnexion">
-                            <td><a href="/Casino/view/inscription.php">Inscription</a></td>
+                            <td><a href="../index.php?page=inscription">Inscription</a></td>
                         </tr>
                     </table>
                 </div>

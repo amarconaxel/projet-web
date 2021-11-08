@@ -1,25 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- STYLE -->
-    <link href="../public/css/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../public/css/default.css" >
-	<link rel="stylesheet" href="../public/css/menu.css" >
-	<link rel="stylesheet" href="../public/css/pieds.css" >
-    <link rel="stylesheet" href="../public/css/entete.css" >
-    <link rel="stylesheet" href="../public/css/inscription.css" >
-    <title>Inscription</title>
-</head>
 
 <body>
-
-<!-- HEADER -->
-<?php
-    include 'includes/header.php';
-?>
-<!-- HEADER END -->
 
 <!-- MAIN -->
 <div class="wrapper">
@@ -39,7 +19,7 @@
             <p id="userPwdd"></p>
             <input class="box-input" type="password" name="pwdrepeat" placeholder="Confirmation du mot de passe">
             <p id="userPwddRep"></p>
-            <button class="cancelbtn"type="button" onclick="window.location.href= '/Casino/index.php';">Annuler</button>
+            <button class="cancelbtn"type="button" onclick="window.location.href= '../index.php';">Annuler</button>
             <button class="signupbtn" type="submit" name="signup-submit">S'inscrire</button>
         </div>
     </form>
@@ -47,11 +27,7 @@
     <!--FIN INSCRIPTION -->
 </div>
 <!-- MAIN END -->
-<!-- FOOTER -->
-<?php
-            include('includes/footer.php');
-?>
-<!-- FOOTER END -->
+
 <script>
 
 // validation cote client

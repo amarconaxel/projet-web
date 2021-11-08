@@ -57,7 +57,7 @@
 			</form>
 		</div>
 		<div id="pubs">
-			<img src="../images/pub-vodka.gif" alt="Publicité Vodka" />
+			<img src="../public/images/pub-vodka.gif" alt="Publicité Vodka" />
 		</div>
 	</div>
 	

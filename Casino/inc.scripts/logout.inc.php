@@ -4,5 +4,5 @@
 
 session_start();
 session_destroy();
-header("Location: /Casino/index.php");
+header("Location: ../index.php");
 ?>

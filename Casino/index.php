@@ -8,7 +8,7 @@ if (isset($_GET['page']) && $_GET['page'] != "") {
     $page="accueil";
 }
 ?>
-
+    
 <!DOCTYPE html>
 
 <html>
@@ -16,11 +16,12 @@ if (isset($_GET['page']) && $_GET['page'] != "") {
     <meta charset="UTF-8">
     <!-- STYLE -->
     <meta charset="utf-8">
-	<title>CYKASINO<?php echo("- ".ucfirst($page)); ?></title>
+	<title>CYKASINO<?php echo(" - ".ucfirst($page)); ?></title>
 	<link rel="stylesheet" href="public/css/default.css" >
 	<link rel="stylesheet" href="public/css/menu.css" >
 	<link rel="stylesheet" href="public/css/pieds.css" >
     <link rel="stylesheet" href="public/css/entete.css" >
+    <link rel="stylesheet" href="../public/css/inscription.css" >
     <title>Cykasino</title>
 </head>
 
@@ -33,7 +34,7 @@ if (isset($_GET['page']) && $_GET['page'] != "") {
 <!-- WRAPPER -->
         <!-- MAIN -->
         <?php
-            include("view/$page.php");
+            include("view/".$page.".php");
         ?>
         <!-- MAIN END -->
 <!-- WRAPPER END -->

@@ -20,7 +20,7 @@ if(isset($_POST['login-submit'])) {
 					$pwdCheck = password_verify($password, $result["password_profil"]);
 					$_SESSION['result'] = $result;
                     if($pwdCheck == false) {
-                        header("Location: /Casino/view/login.php?error=wrongpwd");
+                        header("Location: ../view/login.php?error=wrongpwd");
                         exit();
                     }
                     else if($pwdCheck == true) {
@@ -29,7 +29,7 @@ if(isset($_POST['login-submit'])) {
                         $_SESSION['status'] = $result['status_profil'];
 						$_SESSION['point'] = $result['credit_profil'];
                         
-                        header("Location: /Casino/index.php?login=succes");
+                        header("Location: ../index.php?login=succes");
                         exit();
                     }
 			} else {

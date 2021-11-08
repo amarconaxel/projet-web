@@ -8,11 +8,11 @@ session_status() === PHP_SESSION_ACTIVE ? TRUE : session_start();
         $id=$_POST['modifier'];
         $result=$userController->deleteUser($id);
         if ($result !== null) {
-            header("Location: /Casino/view/gestionUtilisateur.php?supprimer=error");
+            header("Location: ../view/gestionUtilisateur.php?supprimer=error");
             exit();
         }
         else {
-            header("Location: /Casino/view/gestionUtilisateur.php?succes=succes");
+            header("Location: ../view/gestionUtilisateur.php?succes=succes");
             exit();
         }
     } else {

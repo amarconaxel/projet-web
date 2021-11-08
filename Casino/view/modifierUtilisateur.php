@@ -38,7 +38,7 @@ if ($_SESSION['status'] == 'admin'){
     $result = $userController->selectUser($id);
     echo '
         <main class="mainn col-9">
-        <form class="box" name="modifForm" action="/Casino/inc.scripts/modifier_inc.php" method="post">
+        <form class="box" name="modifForm" action="../inc.scripts/modifier_inc.php" method="post">
             <div class="form-group">  
                 <h1 class="box-title">Modification</h1>
                 <p id="userName"></p>
